@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./CSS Files/style.css">
+    <script src="./JS files/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a1dd8c9f59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="loginFormMainContainer">
+        <!--========== Login Form ==========-->
+        <div class="loginForm">
+            <!-- Login Form Header -->
+            <div class="loginFormHeader">
+                <h1 class="title">Log In</h1>
+            </div>
+
+            <!-- Login Form Content -->
+            <div class="loginFormContent">
+                <form>
+                    <span class="emailInputSpan inputsSpans"><input type="email" id="emailInput" placeholder="E-mail" name="E-mail"></span>
+                    <span class="emailError inputsErrors">Enter a correct E-mail!</span>
+
+                    <span class="passwordInputSpan inputsSpans"><input type="password" id="passwordInput" placeholder="Password" name="Password"><i class="fa-solid fa-eye"></i></span>
+                    <span class="passwordError inputsErrors">Enter a correct Password!</span>
+
+                    <a href="./HTML Files/reset password page.html" id="passwordResetLink">Forgot password?</a>
+
+                    <button type="submit" id="loginButton"><span>Log In</span><i class="fa-solid fa-circle-notch"></i></button>
+                </form>
+                <span class="SignUpText">Don't have an account?<a href="./HTML Files/sign up form.html" id="signUpLink"> Sign Up</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

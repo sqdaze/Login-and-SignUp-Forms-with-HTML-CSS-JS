@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../CSS Files/style.css">
+    <script src="../JS files/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a1dd8c9f59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="signUpFormMainContainer">
+        <!--========== Sign Up Form ==========-->
+        <div class="signUpForm">
+            <div class="signUpFormHeader">
+                <h1 class="title">Sign Up</h1>
+            </div>
+
+            <!-- Sign Up Form Content -->
+            <div class="signUpFormContent">
+                <form>
+                    <input type="text" class="usernameInput" placeholder="Username" name="Username">
+                    <span class="usernameInputError signUpInputsErrors">Enter a correct Username</span>
+                    
+                    <input type="email" class="emailInput" placeholder="E-mail" name="E-mail">
+                    <span class="emailInputError signUpInputsErrors">Enter a correct E-mail</span>
+                    
+                    <span class="passwordInputSpan"><input type="password" id="passwordInput" class="passwordInput" placeholder="Password" name="Password"><i class="fa-solid fa-eye"></i></span>
+                    <span class="passwordInputError signUpInputsErrors">Enter a correct Password</span>
+                    
+                    <button type="submit">Sign Up</button>
+                    <a href="../index.html" class="backAndLogin">Back and Login</a>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sign Up Confirmation Email Link Pop Up -->
+        <div class="signUpConfirmationEmailLinkPopUp">
+            <div class="signUpConfirmationEmailLinkPopUpHeader">
+                <h1 class="title"><i class="fa-solid fa-envelope"></i>E-mail Confirmation</h1>
+            </div>
+
+            <div class="signUpConfirmationEmailLinkPopUpContent">
+                <p>Check your e-mail and click on the e-mail confirmation link</p>
+                <span class="resendEmailConfirmationLinkButton resendTheLinkButton">Resend link <span class="resendTheLinkButtonCount"></span></span>
+            </div>
+            <div class="linkSentNotification"><i class="fa-solid fa-check"></i> <h1>Link sent</h1></div>
+        </div>
+    </div>
+</body>
+</html>
